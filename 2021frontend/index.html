@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2021 Frontend Developer Crash Course</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Remember<span>That</span></a>
+            <img src="images/menu.svg" alt="Open Nav" class="mobile-menu" id="mobile-cta">
+            <nav>
+                <img id="mobile-exit" src="images/exit.svg" class="mobile-menu-exit" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's Nitty &amp; Gritty</p>
+                <h1>A Task App That Doesn't Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Watch a video">Watch a Video
+                    </a>
+                </div>
+            </div>
+            <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Cofectti Explosions upon Task Cpmpletions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaboration</li>
+                <li>Other awesome features</li>
+            </ul>
+            <img src="images/holding-phone.jpg" alt="Man holding phone">
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+                    <blockquote>"Etiam facilisis neque at luctus rutrum. Mauris finibus finibus odio sit amet vehicula. Duis sed sem a dolor pulvinar condimentum eu luctus orci. Nam vitae sem consequat elit hendrerit rutrum. Morbi ullamcorper diam sed purus condimentum consectetur. Duis faucibus magna ac est rutrum fringilla. Donec hendrerit sapien vitae mi rhoncus vestibulum."</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+                    <blockquote>"Etiam facilisis neque at luctus rutrum. Mauris finibus finibus odio sit amet vehicula. Duis sed sem a dolor pulvinar condimentum eu luctus orci. Nam vitae sem consequat elit hendrerit rutrum. Morbi ullamcorper diam sed purus condimentum consectetur. Duis faucibus magna ac est rutrum fringilla. Donec hendrerit sapien vitae mi rhoncus vestibulum."</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+                    <blockquote>"Etiam facilisis neque at luctus rutrum. Mauris finibus finibus odio sit amet vehicula. Duis sed sem a dolor pulvinar condimentum eu luctus orci. Nam vitae sem consequat elit hendrerit rutrum. Morbi ullamcorper diam sed purus condimentum consectetur. Duis faucibus magna ac est rutrum fringilla. Donec hendrerit sapien vitae mi rhoncus vestibulum."</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7467.981157271044!2d31.38887967072838!3d30.111708002150102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14581740281b4f15%3A0x50501310c5078aae!2sCairo%20International%20Airport%20-%20Terminal%202!5e0!3m2!1sen!2seg!4v1618406315116!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta');
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        });
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        });
+    </script>
+</body>
+</html>
